@@ -1,6 +1,5 @@
 version: 1.0.{build}
 image: Nodejs
-nodejs_version: 14.x
 
 build_script:
   - npm install
