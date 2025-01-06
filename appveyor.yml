@@ -1,0 +1,27 @@
+version: 1.0.{build}
+image: Nodejs
+nodejs_version: 14.x
+
+build_script:
+  - npm install
+  - npm run build  
+
+deploy:
+  provider: GitHub
+  release: true
+  owner: Elizabess
+  repository: Elizabess/Gnome_Game 
+  api_key:  
+    secure: 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 
+  on:
+    appveyor_branch: master  
+    branch:
+      - master               
+
+publish:
+  provider: GitHub
+  branch: gh-pages
+  repository: Elizabess/Gnome_Game
+  target_folder: ./dist 
+  api_key: 
+    secure: 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
