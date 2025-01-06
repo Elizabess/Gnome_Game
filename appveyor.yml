@@ -1,5 +1,5 @@
 version: 1.0.{build}
-image: Nodejs
+image: Visual Studio 2019
 
 build_script:
   - npm install
