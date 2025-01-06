@@ -17,10 +17,3 @@ deploy:
     branch:
       - master               
 
-publish:
-  provider: GitHub
-  branch: gh-pages
-  repository: Elizabess/Gnome_Game
-  target_folder: ./dist 
-  api_key: 
-    secure: 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
